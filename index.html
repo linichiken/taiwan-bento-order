@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>好呷便當 | 台灣午餐便當線上訂購</title>
+<link rel="stylesheet" href="bento.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">好呷<span>便當</span></a>
+      <nav class="nav">
+        <a href="#menu">菜單</a>
+        <a href="#order">訂購表單</a>
+        <a href="#faq">常見問題</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>道地台灣味，午餐便當現點現做</h1>
+      <p>六款人氣台灣便當，每日新鮮現做，中午 11:00 前訂購即可準時送達。</p>
+      <a href="#menu" class="btn btn-primary">查看菜單</a>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 class="section-title">今日午餐便當</h2>
+      <div class="menu-grid">
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=450&fit=crop" alt="爌肉飯便當" loading="lazy">
+          <div class="menu-card-body">
+            <h3>爌肉飯便當</h3>
+            <p>滷得軟嫩入味的爌肉，搭配白飯與家常小菜。</p>
+            <p class="price">NT$95</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?w=600&h=450&fit=crop" alt="雞腿排便當" loading="lazy">
+          <div class="menu-card-body">
+            <h3>香煎雞腿排便當</h3>
+            <p>外皮酥香、肉質多汁的雞腿排，經典人氣首選。</p>
+            <p class="price">NT$110</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1626804475297-411a318a9b70?w=600&h=450&fit=crop" alt="排骨便當" loading="lazy">
+          <div class="menu-card-body">
+            <h3>台式排骨便當</h3>
+            <p>醃漬入味現炸排骨，搭配滷蛋與時蔬。</p>
+            <p class="price">NT$100</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=600&h=450&fit=crop" alt="控肉滷味便當" loading="lazy">
+          <div class="menu-card-body">
+            <h3>三寶滷味便當</h3>
+            <p>滷雞腿、豆干、油豆腐，配菜豐富滿足感十足。</p>
+            <p class="price">NT$105</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&h=450&fit=crop" alt="炸雞腿便當" loading="lazy">
+          <div class="menu-card-body">
+            <h3>古早味炸雞腿便當</h3>
+            <p>現炸金黃雞腿，酥脆多汁，台灣經典便當代表。</p>
+            <p class="price">NT$115</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=450&fit=crop" alt="蔬食便當" loading="lazy">
+          <div class="menu-card-body">
+            <h3>養生蔬食便當</h3>
+            <p>多樣時令蔬菜與豆製品，清爽無負擔的健康選擇。</p>
+            <p class="price">NT$90</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="section alt">
+    <div class="container order-inner">
+      <div>
+        <h2 class="section-title">線上訂購</h2>
+        <p>填寫以下表單完成訂購，我們將於送達前致電確認。</p>
+        <p class="hint">配送時間：週一至週五 11:00 – 13:30</p>
+      </div>
+      <form id="orderForm" class="order-form">
+        <label>
+          姓名
+          <input type="text" name="name" required placeholder="請輸入姓名">
+        </label>
+        <label>
+          聯絡電話
+          <input type="tel" name="phone" required placeholder="請輸入聯絡電話">
+        </label>
+        <label>
+          送餐地址
+          <input type="text" name="address" required placeholder="請輸入送餐地址">
+        </label>
+        <label>
+          選擇便當
+          <select name="bento" required>
+            <option value="">請選擇</option>
+            <option value="爌肉飯便當">爌肉飯便當 NT$95</option>
+            <option value="香煎雞腿排便當">香煎雞腿排便當 NT$110</option>
+            <option value="台式排骨便當">台式排骨便當 NT$100</option>
+            <option value="三寶滷味便當">三寶滷味便當 NT$105</option>
+            <option value="古早味炸雞腿便當">古早味炸雞腿便當 NT$115</option>
+            <option value="養生蔬食便當">養生蔬食便當 NT$90</option>
+          </select>
+        </label>
+        <label>
+          數量
+          <input type="number" name="quantity" min="1" value="1" required>
+        </label>
+        <label>
+          備註（辣度、不吃的食材等）
+          <textarea name="note" rows="3" placeholder="選填"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">送出訂單</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="section-title">常見問題</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>訂購時間？</h3>
+          <p>請於當日上午 11:00 前完成訂購，以確保準時送達。</p>
+        </div>
+        <div class="faq-item">
+          <h3>付款方式？</h3>
+          <p>目前支援貨到付款，接受現金與行動支付。</p>
+        </div>
+        <div class="faq-item">
+          <h3>配送範圍？</h3>
+          <p>目前僅提供指定商圈內配送，訂購時將為您確認地址是否在範圍內。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 好呷便當. All rights reserved.</p>
+      <p class="credit">便當圖片來源：Unsplash（免費可商用圖庫）</p>
+    </div>
+  </footer>
+
+  <script src="bento.js"></script>
+</body>
+</html>
